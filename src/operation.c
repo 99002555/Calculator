@@ -23,14 +23,68 @@ int divide(int operand1, int operand2)
         return operand1 / operand2;
 }
 
-int squares(int operand1)
+int hcf(int operand1,int operand2)
 {
-    return (operand1 * operand1);
+	int i, gcd;
+
+
+    for(i=1; i <= operand1 && i <= operand2; ++i)
+    {
+        // Checks if i is factor of both integers
+        if(operand1%i==0 && operand2%i==0)
+            gcd = i;
+    }
+
+    return gcd;
 }
 
-int cubes(int operand1)
+ int prime(int operand1)
 {
-    return (operand1 * operand1 * operand1);
+  int result = isprime(operand1);
+  return result;
+}
+
+int lcm(int operand1,int operand2)
+{
+	int operand1, operand2, i, gcd, lcm;
+    for (i = 1; i <= operand1 && i <= operand2; ++i) {
+        
+        // check if i is a factor of both integers
+        if (operand1 % i == 0 && operand2 % i == 0)
+            gcd = i;
+    }
+
+    lcm = (n1 * n2) / gcd;
+	return lcm;
+}
+
+int leftshift(int operand1,int operand2)
+{
+	return operand1<<operand2;
+}
+
+int rightshift(int operand1,int operand2)
+{
+	return operand1>>operand2;
+}
+
+int swap(int operand1, int operand2)
+  {
+      int operand3;
+      operand3=operand1;
+      operand1=operand2;
+      operand2=operand3;
+  }
+
+
+int squares(int operand2)
+{
+    return (operand2 * operand2);
+}
+
+int cubes(int operand2)
+{
+    return (operand2 * operand2 * operand2);
 }
 
 int power(int operand1, int operand2)
@@ -68,11 +122,6 @@ int factorial(int operand1)
         return fact;
     }
     
- int prime(int operand1)
-{
-  int result = isprime(operand1);
-  return result;
-}
 
 int isprime(int operand1)
 {
@@ -93,10 +142,4 @@ int isprime(int operand1)
      return (operand1+operand2)/2;
  }
     
-  int swap(int operand1, int operand2)
-  {
-      int operand3;
-      operand3=operand1;
-      operand1=operand2;
-      operand2=operand3;
-  }
+  
