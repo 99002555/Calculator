@@ -1,4 +1,4 @@
-#include <calculator_operations.h>
+#include <operation.h>
 int isprime(int operand1);
 int add(int operand1, int operand2)
 {
