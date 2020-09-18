@@ -12,7 +12,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE ,SQUARES ,CUBES , POWER, MAX ,FACTORIAL ,PRIME ,AVERAGE ,SWAP , EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE ,HCF ,LCM ,LEFTSHIFT ,RIGHTSHIFT ,SQUARES ,CUBES , POWER, MAX ,FACTORIAL ,PRIME ,AVERAGE ,SWAP , EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -97,8 +97,49 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
+            
+        case LCM:
+            printf("\n\tLCM of %d and %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            lcm(calculator_operand1, calculator_operand2));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+            
+         case HCF:
+            printf("\n\tHCF of %d and %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            hcf(calculator_operand1, calculator_operand2));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+            
+         case LEFTSHIFT:
+            printf("\n\tleft shift %d by %d is %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            leftshift(calculator_operand1, calculator_operand2));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+            
+         case RIGHTSHIFT:
+            printf("\n\tright shift %d by %d is %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            rightshift(calculator_operand1, calculator_operand2));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+            
         case SQUARES:
-            printf("\n\t%d / %d = %d\nEnter to continue", 
+            printf("\n\tsquare of %d / %d = %d\nEnter to continue", 
             calculator_operand1, 
             squares(calculator_operand1);
                    
@@ -106,7 +147,7 @@ void calculator_menu(void)
             getchar();
             break;
          case CUBES:
-             printf("\n\t%d / %d = %d\nEnter to continue", 
+             printf("\n\t cube of %d / %d = %d\nEnter to continue", 
             calculator_operand1, 
             cubes(calculator_operand1);
                    
