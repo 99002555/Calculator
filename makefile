@@ -6,11 +6,11 @@ BUILD = build
 
 # All source code files
 SRC = main.c\
-src/operations.c\
+src/operation.c\
 
 # All test source files
-TEST_SRC = src/operations.c\
-test/test_operations.c
+TEST_SRC = src/operation.c\
+test/testcases.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
