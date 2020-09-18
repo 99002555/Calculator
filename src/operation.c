@@ -70,10 +70,10 @@ int rightshift(int operand1,int operand2)
 
 int swap(int operand1, int operand2)
   {
-      int operand3;
-      operand3=operand1;
+      int temp;
+      temp=operand1;
       operand1=operand2;
-      operand2=operand3;
+      operand2=temp;
   }
 
 
