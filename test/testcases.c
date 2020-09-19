@@ -114,8 +114,8 @@ void test_power(void)
 
 void test_max(void)
 {
-  CU_ASSERT(9, max(2,9));
-  CU_ASSERT(0, max(-1,0));
+  CU_ASSERT(9== max(2,9));
+  CU_ASSERT(0==max(-1,0));
   }
  
  void test_factorial(void)
