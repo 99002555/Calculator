@@ -59,7 +59,7 @@ int isprime(int operand1)
 
 int lcm(int operand1,int operand2)
 {
-	int operand1, operand2, i, gcd, lcm;
+	int i, gcd, lcm;
     for (i = 1; i <= operand1 && i <= operand2; ++i) {
         
         // check if i is a factor of both integers
@@ -67,7 +67,7 @@ int lcm(int operand1,int operand2)
             gcd = i;
     }
 
-    lcm = (n1 * n2) / gcd;
+    lcm = (operand1 * operand2) / gcd;
 	return lcm;
 }
 
@@ -111,7 +111,7 @@ int power(int operand1, int operand2)
     return result;
 }
 
-int max(int operand 1,int operand 2)
+int max(int operand1,int operand2)
 {
     if(operand1> operand2)
     {
@@ -130,7 +130,7 @@ int factorial(int operand1)
         printf("Error! Factorial of a negative number doesn't exist.");
     else {
         for (items = 1; items <= operand1; ++items) {
-            fact *= i;
+            fact *= items;
         }
         return fact;
     }
@@ -138,7 +138,7 @@ int factorial(int operand1)
 
 
    
- float average(float operand1, float operand2)
+ int average(int operand1, int operand2)
  {
      return (operand1+operand2)/2;
  }
