@@ -134,6 +134,7 @@ int factorial(int operand1)
         }
         return fact;
     }
+}
     
 
 
