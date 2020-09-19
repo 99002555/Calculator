@@ -21,7 +21,7 @@ int factorial(int operand1);
 int cubes(int operand2);
 int swap(int operand1 ,int operand2);
 int power(int operand1, int operand2);
-float average(float operand1, float operand2);
+int average(int operand1, int operand2);
 int max(int operand1, int operand2);
 int prime(int operand1);
 
