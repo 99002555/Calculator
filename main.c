@@ -139,7 +139,7 @@ void calculator_menu(void)
             break;
             
         case SQUARES:
-            printf("\n\tsquare of %d / %d = %d\nEnter to continue", 
+            printf("\n\tsquare of %d = %d\nEnter to continue", 
             calculator_operand1, 
             squares(calculator_operand1));
                    
@@ -147,7 +147,7 @@ void calculator_menu(void)
             getchar();
             break;
          case CUBES:
-             printf("\n\t cube of %d / %d = %d\nEnter to continue", 
+             printf("\n\t cube of %d = %d\nEnter to continue", 
             calculator_operand1, 
             cubes(calculator_operand1));
                    
@@ -173,7 +173,7 @@ void calculator_menu(void)
             getchar();
             break;
           case FACTORIAL:
-                  printf("\n\t%d / %d = %d\nEnter to continue", 
+                  printf("\n\t%d = %d\nEnter to continue", 
             calculator_operand1, 
             factorial(calculator_operand1));
                    
@@ -181,7 +181,7 @@ void calculator_menu(void)
             getchar();
             break;  
           case PRIME:
-               printf("\n\t%d / %d = %d\nEnter to continue", 
+               printf("\n\t%d = %d\nEnter to continue", 
            calculator_operand1, 
             prime(calculator_operand1));
                    
@@ -209,7 +209,7 @@ void calculator_menu(void)
                    
                    
             
-        case 13:
+        case 17:
             exit(0);
             break;
         default:
